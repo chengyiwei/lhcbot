@@ -1,0 +1,75 @@
+[2024-04-28 00:02:38] [WARNING]: Protocol -> device lock is disabled. HTTP API may fail. 
+[2024-04-28 00:02:38] [ERROR]: Protocol -> parse incoming packet error: session expired 
+[2024-04-28 00:02:53] [WARNING]: Callback error: Packet timed out, Or response data is empty 
+[2024-04-28 00:02:53] [WARNING]: Callback error: Packet failed to sendPacket: connection closed, Or response data is empty 
+[2024-04-28 00:03:07] [WARNING]: Protocol -> device lock is disabled. HTTP API may fail. 
+[2024-04-28 00:03:07] [ERROR]: Protocol -> parse incoming packet error: session expired 
+[2024-04-28 00:03:21] [WARNING]: Protocol -> device lock is disabled. HTTP API may fail. 
+[2024-04-28 00:03:21] [ERROR]: Protocol -> parse incoming packet error: session expired 
+[2024-04-28 00:04:33] [WARNING]: Protocol -> device lock is disabled. HTTP API may fail. 
+[2024-04-28 00:04:33] [ERROR]: Protocol -> parse incoming packet error: session expired 
+[2024-04-28 00:04:48] [WARNING]: Callback error: Packet timed out, Or response data is empty 
+[2024-04-28 00:04:48] [WARNING]: Callback error: Packet failed to sendPacket: connection closed, Or response data is empty 
+[2024-04-28 00:05:03] [WARNING]: 恢复会话失败: register error: Packet timed out , 尝试使用正常流程登录. 
+[2024-04-28 00:05:05] [WARNING]: 检查协议更新失败: Get "https://ghproxy.com/https://raw.githubusercontent.com/RomiChan/protocol-versions/master/android_pad.json": read tcp 192.168.161.40:3062->138.2.88.86:443: wsarecv: An existing connection was forcibly closed by the remote host. 
+[2024-04-28 00:05:05] [WARNING]: 登录需要滑条验证码, 请验证后重试. 
+[2024-04-28 00:05:05] [WARNING]: 请选择提交滑块ticket方式: 
+[2024-04-28 00:05:05] [WARNING]: 1. 自动提交 
+[2024-04-28 00:05:05] [WARNING]: 2. 手动抓取提交 
+[2024-04-28 00:05:05] [WARNING]: 请输入(1 - 2)： 
+[2024-04-28 00:05:12] [WARNING]: 请前往该地址验证 -> https://ti.qq.com/safe/tools/captcha/sms-verify-login?aid=16&uin=3163321073&sid=5917077747064971826&cap_cd=CTBujq5hHhW5DE0vZNuFFqm59skK_u3BhcClzI11CxnQIgvnI0tpCQ**&clientype=1&apptype=2  
+[2024-04-28 00:05:12] [WARNING]: 请输入ticket： (Enter 提交) 
+[2024-04-28 00:05:49] [WARNING]: Protocol -> device lock is disabled. HTTP API may fail. 
+[2024-04-28 00:05:51] [WARNING]: 检查更新失败！ 
+[2024-04-28 00:10:52] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 00:10:56] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 00:11:24] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 00:11:26] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 00:17:24] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 00:17:26] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 00:19:59] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 00:20:01] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 00:22:20] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 00:22:21] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 00:23:46] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 00:23:51] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 00:28:00] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 00:28:01] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 00:29:15] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 00:29:16] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 00:32:04] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 00:32:06] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 00:32:09] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 00:32:11] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 00:34:57] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 00:35:01] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 00:35:29] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 00:35:31] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 00:35:40] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 00:35:41] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 00:37:30] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 00:37:31] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 00:40:49] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 00:40:51] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 00:44:27] [WARNING]: 刷新 token 出现错误: code=-1, msg: QSign not initialized, unable to request_token, please submit the initialization package first.. server: http://127.0.0.1:25599 
+[2024-04-28 01:18:23] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 01:18:26] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 01:19:32] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 01:19:36] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 01:20:49] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 01:20:51] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 01:24:15] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 01:24:16] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 01:24:27] [WARNING]: 刷新 token 出现错误: code=-1, msg: QSign not initialized, unable to request_token, please submit the initialization package first.. server: http://127.0.0.1:25599 
+[2024-04-28 01:34:16] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 01:34:21] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 01:37:15] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 01:37:16] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 01:37:20] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 01:37:21] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 01:38:08] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 01:38:11] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 01:39:06] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 01:39:11] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
+[2024-04-28 01:39:53] [WARNING]: 监听反向WS Universal时出现错误: websocket: close 1012 
+[2024-04-28 01:39:56] [WARNING]: 向反向WS Universal服务器推送 Event 时出现错误: websocket: close sent 
