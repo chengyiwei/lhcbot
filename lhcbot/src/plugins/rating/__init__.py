@@ -4,7 +4,7 @@ from nonebot.adapters.onebot.v11 import Bot, MessageEvent, MessageSegment
 from .calculate_rating import rating  # 假设 rating.py 中有一个名为 QQ_ask 的函数
 
 # 创建命令处理器，监听 "cf" 命令
-cf_command = on_command("cf", aliases={"at", "rating", "contest", "c"}, priority=4)
+cf_command = on_command("cf", aliases={"at", "rating", "contest", "c", "help", "stu", "info"}, priority=4)
 
 # 定义处理函数
 @cf_command.handle()
