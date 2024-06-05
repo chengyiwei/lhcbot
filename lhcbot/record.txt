@@ -2615,3 +2615,36 @@ XQC在直播中主要玩一些流行的多人在线游戏，如守望先锋、�
 2024-05-22 21:09:59-1485868106: AI:Hello! How can I assist you today?
 2024-06-05 23:52:13-1485868106:/cf AI:{"statusCode":401,"message":"Unauthorized","data"
 2024-06-05 23:52:21-1485868106:/at AI:{"statusCode":401,"message":"Unauthorized","data"
+2024-06-05 23:59:04-1485868106: AI:{"statusCode":401,"message":"Unauthorized","data"
+2024-06-05 23:59:20-1485868106:你在干嘛你 AI:{"statusCode":401,"message":"Unauthorized","data"
+2024-06-06 00:00:19-1485868106:qwq AI:{"statusCode":401,"message":"Unauthorized","data"
+2024-06-06 00:06:24-1485868106: AI:{"timestamp":"2024-06-05T16:06:25.772+00:00","path":"/v1/engines/davinci-codex/completions","status":404,"error":"Not Found","requestId":"0cfabd30-9
+2024-06-06 00:06:32-1485868106:你在干嘛呢 AI:{"timestamp":"2024-06-05T16:06:33.266+00:00","path":"/v1/engines/davinci-codex/completions","status":404,"error":"Not Found","requestId":"f63554a5-9
+2024-06-06 00:07:46-1485868106: AI:{
+    "error": {
+        "message": "Incorrect API key provided: sk-6j441***************************************ZXv6. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+  
+2024-06-06 00:09:19-1485868106: AI:{
+  "error": {
+    "type": "invalid_request_error",
+    "code": "unknown_url",
+    "message": "Unknown request URL: POST /v1. Please check the URL for typos, or see the docs at https://platform.openai.com/docs/api-reference/.",
+    "param": null
+2024-06-06 00:10:37-1485868106: AI:{"message":"暂不支持指定的模型 (request id: 66608dfebcb478437841e6411027d45e)","type":"chat_api_e
+2024-06-06 00:14:12-1485868106: AI:{"choices":[{"finish_reason":"stop","index":0,"message":{"content":"Sure, what can I help you with? You can give me commands to make calculations, find matches or other tasks.","role":"assistant"}}],"created":1717604051,"id":"chatcmpl-9WnZ51vzdanDURB7B6A06adawyCLb","model":"gpt-4","object":"chat.completion","system_fingerprint":null,"usage":{"completion_tokens":24,"prompt_tokens":43,"total_tokens
+2024-06-06 00:16:56-1485868106: AI:Hello! It seems like you haven't provided any input. How may I assist you today? If you have any questions or need assistance with something, feel free to ask.
+2024-06-06 00:17:05-1485868106:你好 AI:你好！有什么我可以帮助你的吗？
+2024-06-06 00:17:16-1485868106:你是gpt几 AI:我是基于GPT-3的模型。
+2024-06-06 00:17:41-1485868106:你是GPT4 吗 AI:对不起，让我澄清一下，我是基于GPT-3的模型。目前为止，OpenAI尚未发布GPT-4。如果您有任何问题或需要帮助，我会很乐意协助您。
+2024-06-06 00:18:18-1485868106:你会做什么 AI:作为一个聊天机器人，我可以帮助执行多种任务，例如：
+
+1. 回答各种问题，从一般性的事实到复杂的问题。
+2. 提供教育咨询，包括帮助解答学习过程中的问题。
+3. 与你进行日常对话，提供陪伴。
+4. 执行简单的指令，比如进行数学计算。
+5. 提供新闻概述，告诉你最新的全球事件。
+
+如果你有特定的需求或任务
