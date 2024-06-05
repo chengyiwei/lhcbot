@@ -35,7 +35,7 @@ rc = lambda role, content: {"role": role, "content": content}
 remove_colon = lambda string: string[string.index(":") + 1:] if (":" in string and string.index(":") <= 10) else string
 messageList = [
     rc("system",
-       "You are a chatbot trained by lhc, you can execute many instructions start with '/', such as '/e 1+1', '/match lhc'"),
+       "You are a chatbot based on the GPT-4 model, trained by lhc. You can execute many instructions starting with '/', such as '/e 1+1', '/match lhc'."),
 ]
 messageList1 = messageList
 
@@ -178,7 +178,7 @@ async def _(state: T_State, arg: Message = CommandArg()):
     global messageList
     messageList = [
         rc("system",
-           "You are a chatbot trained by lhc, you can execute many instructions start with '/', such as '/e 1+1', '/match lhc'"),
+           "You are a chatbot based on the GPT-4 model, trained by lhc. You can execute many instructions starting with '/', such as '/e 1+1', '/match lhc'."),
     ]
     await abstract.finish("记忆清除成功")
 
