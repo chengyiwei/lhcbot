@@ -31,6 +31,10 @@ headers = {
     'Content-Type': 'application/json'
 }
 
+# 初始化free为50
+# /resetbalance 重置free
+free_uses = 20
+
 rc = lambda role, content: {"role": role, "content": content}
 remove_colon = lambda string: string[string.index(":") + 1:] if (":" in string and string.index(":") <= 10) else string
 messageList = [
@@ -41,21 +45,14 @@ messageList1 = messageList
 
 def makedata(thisinput: str = "", thisuser: str = "user", lastuser: str = "user", lastinput: str = "",
              lastreply: str = ""):
-    global messageList, messageList1
+    global messageList, messageList1, free_uses
     if lastreply != "" and lastinput != "":
         messageList.append(rc("assistant", lastreply))
     messageList.append(rc(thisuser, thisinput))
-    try:
-        free = getBalance()['free_balance']
-    except Exception as e:
-        free = str(e)
     leng = len(messageList)
-    print(f'len:{leng}  free:{free}')
-    try:
-        if (leng > 2 and float(free) < 10) or leng > 98:
-            messageList = messageList1.append(rc(thisuser, thisinput))
-    except ValueError:
-        messageList = [rc(thisuser, thisinput)]
+    print(f'len:{leng}  free:{free_uses}')
+    if (leng > 2 and free_uses <= 0) or leng > 98:
+        messageList = messageList1.append(rc(thisuser, thisinput))
     return {
         "model": "gpt-4",
         "messages": messageList,
@@ -63,17 +60,9 @@ def makedata(thisinput: str = "", thisuser: str = "user", lastuser: str = "user"
         "temperature": 0.9
     }
 
-def getBalance():
-    global headers
-    return {'free_balance': 100}  # Mock balance
-
 if __name__ == "__main__":
     response = requests.post(url, headers=headers, json=makedata("你好"))
-
-    for line in response.iter_lines():
-        if line:
-            text = line.decode("utf-8")  # 将字节流解码为文本
-            print(text)  # 打印每行文本数据
+    print(response.json())  # 打印完整响应以进行调试
 
 frienddesc = {}
 
@@ -110,12 +99,15 @@ pp = on_message(rule=to_me(), priority=98)
 
 @pp.handle()
 async def handle_city(bot: Bot, event: MessageEvent):
-    global url, lastuser, lastinput, lastreply, headers
+    global url, lastuser, lastinput, lastreply, headers, free_uses
     user = event.user_id
     if user in [2854196310]:
         return
     city = str(event.get_message())
     if 'CQ:image' in city or 'CQ:face' in city:
+        return
+    if free_uses <= 0:
+        await pp.finish(message="次数用完啦，我要下班辣！")
         return
     try:
         city = f'{str(event.reply.sender.user_id)}:"{event.reply.message}"' + city
@@ -127,7 +119,12 @@ async def handle_city(bot: Bot, event: MessageEvent):
     msg = ""
     try:
         response_data = response.json()
-        msg = response_data['choices'][0]['message']['content']
+        if 'choices' in response_data:
+            msg = response_data['choices'][0]['message']['content']
+            free_uses -= 1  # 每次成功请求后减少free uses
+        else:
+            msg = "No choices found in response."
+            print(response_data)  # 打印完整响应以调试
     except Exception as e:
         msg = f"error:{e}"
     open('record.txt', 'a', encoding='utf8').write(
@@ -159,7 +156,11 @@ async def _(bot: Bot, event: Event, r: str = ArgStr("r"), c: str = ArgStr("c")):
     try:
         response = requests.post(url, headers=headers, json=makedata(thisuser=r, thisinput=c))
         response_data = response.json()
-        msg = response_data['choices'][0]['message']['content']
+        if 'choices' in response_data:
+            msg = response_data['choices'][0]['message']['content']
+        else:
+            msg = "No choices found in response."
+            print(response_data)  # 打印完整响应以调试
     except Exception as e:
         msg = str(e)
     await abstract.send(msg)
@@ -186,9 +187,16 @@ abstract = on_command("showbalance", priority=5, block=True)
 
 @abstract.handle()
 async def _(state: T_State, arg: Message = CommandArg()):
-    global headers
-    response = getBalance()
-    await abstract.send(str(response))
+    global free_uses
+    await abstract.send(f"Remaining free uses: {free_uses}")
+
+abstract = on_command("resetbalance", priority=5, block=True)
+
+@abstract.handle()
+async def _(state: T_State, arg: Message = CommandArg()):
+    global free_uses
+    free_uses = 50
+    await abstract.finish("Free uses reset to 50.")
 
 abstract = on_command("changeidentity", priority=5, block=True)
 
